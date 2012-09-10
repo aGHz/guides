@@ -28,7 +28,27 @@ CSS Style Guide
       line-height: ;
       text-align: ;
       color: ;
+      
+      /* other properties */
       }
-      sub- or otherwise related selector {
+      subselector (hierarchical child of selector above) {
         ...
         }
+      alsoselector (narrower application of selector above) {
+        ...
+        }
+
+* Brackets
+    * Opening bracket must follow its selectors on the same line, except
+        * Opening bracket may be on a new line by itself at the same indentation level as the selector it opens on very rare and special occasions and only with good reason. Apply aesthetic judgement.
+    * Closing bracket must be on a line by itself and at the same indentation level as the rules it encloses        
+* Blank lines and white space
+    * Indentation **must** _most strictly_ consist of 2 spaces. No exceptions (e.g. tabs, 4 spaces, 3 spaces).
+    * There **must** be _no_ white space at the end of any line
+        * Corollary: blank lines **must** be completely empty (i.e. have a length of 0)
+    * Selectors hierarchically related in the DOM **must** be indented to the closing bracket of their parent
+    * Selectors specifying narrower applications of an existing selector (e.g. p and p.forealz) **must** be indented to the closing bracket of the more general selector
+    * Properties **must** be separated by blank lines as outlined above
+        * Other properties **may** be ordered and separated according to aesthetic judgment
+    * Loosely-related selectors **may** be separated by a single blank line
+    * Completely unrelated selectors **may** be separated by two blank lines
