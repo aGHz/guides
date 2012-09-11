@@ -1,8 +1,10 @@
 CSS Style Guide
 ===============
 
-    selector[, selector][,
-    selector] {
+    /* Generic example of CSS style */
+    
+    selector[, another_selector][,
+    a_really_big_selector_on_its_own_line] {
       /* element-related, starting from outermost properties
          going to innermost in terms of physical location:
          display > floating and vertical align > position > coordinates and size > margin > border > padding */
@@ -31,10 +33,10 @@ CSS Style Guide
       
       /* other properties */
       }
-      subselector (hierarchical child of above selector) {
+      sub_selector { /* hierarchical child of above selector */
         ...
         }
-      furthermoreselector (narrower application of above selector) {
+      furthermore_selector { /* narrower application of above selector */
         ...
         }
 
@@ -49,9 +51,13 @@ Selectors
   purposes, you **should** rethink your CSS or DOM structure. You **may** break this rule at your own peril.
 
 
-Identifiers
------------
-* 
+Names
+-----
+* Names (identifiers, class names, even field names) **should** be in lower case, with words separated by a
+  single underscore.
+* Words in names **shoud not** be separated by hyphens, even though this is traditional for CSS, in order to
+  distinguish them from CSS properties and constants, and to enable us to pretend that we're real programmers.
+* Words in names **should not** follow camelCase because it's just plain ugly.
 
 
 Properties
