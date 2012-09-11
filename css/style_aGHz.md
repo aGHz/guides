@@ -31,21 +31,30 @@ CSS Style Guide
       
       /* other properties */
       }
-      subselector (hierarchical child of selector above) {
+      subselector (hierarchical child of above selector) {
         ...
         }
-      alsoselector (narrower application of selector above) {
+      furthermoreselector (narrower application of above selector) {
         ...
         }
 
+
+Selectors
+---------
+* Selectors **must** be separated exclusively by a comma followed by a single space.
+* Selectors **should** in general be specified on a single line.
+* Selectors **may** be split on multiple lines for logical grouping or aesthetic reasons. Do not abuse this.
+* Multi-line selectors **must** break line _after_ a comma.
+* Multi-line selectors **must not** be divided by blank lines. If you find you need such divisions for clarity
+  purposes, you **should** rethink your CSS or DOM structure. You **may** break this rule at your own peril.
 
 Brackets
 --------
 
 * Opening bracket **should** follow its selectors on the same line.
   In such a case, a _single_ space **must** separate the bracket from the selector
-- Opening bracket **may** be on a new line by itself on very rare and
-  special occasions guided by thorough application of aesthetic judgement.
+- Opening bracket **may** be on a new line by itself
+  _on very rare and special occasions guided by thorough application of aesthetic judgement_.
   In such a case, opening bracket **must** be at the same indentation level as the selector it opens.
 * Closing bracket **must** be on a line by itself and at the same indentation level as the rules it encloses.      
 
