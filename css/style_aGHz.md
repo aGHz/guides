@@ -43,8 +43,10 @@ Brackets
 --------
 
 * Opening bracket **should** follow its selectors on the same line.
-- Opening bracket **may** be on a new line by itself on very rare and special occasions guided by thorough application of aesthetic judgement.
-  It such a case, opening bracket **must** be at the same indentation level as the selector it opens.
+  In such a case, a _single_ space **must** separate the bracket from the selector
+- Opening bracket **may** be on a new line by itself on very rare and
+  special occasions guided by thorough application of aesthetic judgement.
+  In such a case, opening bracket **must** be at the same indentation level as the selector it opens.
 * Closing bracket **must** be on a line by itself and at the same indentation level as the rules it encloses.      
 
 
@@ -63,7 +65,11 @@ Blank lines and white space
 * Completely unrelated selectors **should** be separated by two blank lines.
 
 
-    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
-    NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
-    "OPTIONAL" in this document are to be interpreted as described in
-    RFC 2119.
+Must, should, may
+----
+
+> The key words **must**, **must not**, **required**, **shall**,
+**shall not**, **should**, **should not**, **recommended**, **may**,
+and **optional** in this document are to be interpreted as described in
+[RFC 2119](http://pretty-rfc.herokuapp.com/RFC2119).
+
