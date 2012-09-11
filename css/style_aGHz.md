@@ -48,6 +48,17 @@ Selectors
 * Multi-line selectors **must not** be divided by blank lines. If you find you need such divisions for clarity
   purposes, you **should** rethink your CSS or DOM structure. You **may** break this rule at your own peril.
 
+
+Identifiers
+-----------
+* 
+
+
+Properties
+----------
+* 
+
+
 Brackets
 --------
 
