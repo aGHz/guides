@@ -1,11 +1,12 @@
 &#181;.py
 ====
 
-&#181;.py (Micro.py, micropy, upy) is an alternative approach to building web applications in Python
+&#181;.py (Micro.py, upy) is an alternative approach to building [web applications in Python](http://www.python.org/dev/peps/pep-3333/)
 based on nascent philosophies in the Javascript world (c.f. [microjs](http://microjs.com/) and [Ender](http://ender.no.de/)),
 as well as the guiding principle behind Linux development (_Small applications that do one thing and do it well_).
 The driving idea is to eschew full-stack frameworks in favour of a collection of
 extremely specialized and efficient modules.
+
 
 Components
 ==========
@@ -23,7 +24,6 @@ Outside the app
 
 Inside the app
 --------------
-
 Core functionality
 * a WSGI middleware stack manager (for an easily configurable stack with automatic dependency ordering)
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/)
@@ -36,17 +36,7 @@ Optional functionality
 * authentication and authorization
 * automatic admins
 
-
 A good list of possibly acceptable modules can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
-
-
-Component acceptability guidelines
-==================================
-
-For a module to be deemed micro
-* it **must** have a very clearly defined scope of functionality
-* it **should** have proper documentation
-* it **should** have a relatively small and very clean codebase, so as to be easily understandable
 
 
 Zen of &#181;
@@ -54,6 +44,19 @@ Zen of &#181;
 * Modular is better than monolythic
 * [Clean, intuitive source code](http://backbonejs.org/docs/backbone.html) is better than documentation
 * But [documentation](http://readthedocs.org/) is still essential
+* Size matters, but not at the expense of clean, intuitive source code
 * [Two](http://www.sqlalchemy.org/) [modules](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one module](https://www.djangoproject.com/) chasing two rabbits
 * [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
 * [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
+
+
+Component acceptability guidelines
+==================================
+
+For a module to be deemed micro
+* it **must** have a very clearly defined scope of functionality and **must not** overstep it
+* it **must** have an atomic scope of functionality, at some reasonable level of detail
+* it **should** have proper documentation
+* it **should** have a relatively small and very clean codebase, so as to be easily understandable
+* it **must not** monkey patch another module, ever
+
