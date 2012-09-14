@@ -51,3 +51,5 @@ Zen of &#181;
 * Clean, intuitive source code is better than documentation
 * But documentation is still essential
 * Two modules chasing one rabbit each do better than one module chasing two rabbits
+* [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
+  [duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
