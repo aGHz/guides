@@ -23,15 +23,19 @@ Outside the app
 
 Inside the app
 --------------
+
+Core functionality
 * a WSGI middleware stack manager (for an easily configurable stack with automatic dependency ordering)
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/)
 * database access: [SQLAlchemy](http://www.sqlalchemy.org/), [MongoEngine](http://mongoengine.org/), [PyMongo](http://api.mongodb.org/python/current/)
 * template rendering: [Jinja2](http://jinja.pocoo.org/docs/), [Mako](http://docs.makotemplates.org/en/latest/index.html)
 
+Optional functionality
 * cache and session management: [Beaker](http://beaker.readthedocs.org/en/latest/index.html)
 * HTML form validation
 * authentication and authorization
 * automatic admins
+
 
 A good list of possibly acceptable modules can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
 
@@ -48,8 +52,8 @@ For a module to be deemed micro
 Zen of &#181;
 ========
 * Modular is better than monolythic
-* Clean, intuitive source code is better than documentation
-* But documentation is still essential
-* Two modules chasing one rabbit each do better than one module chasing two rabbits
+* [Clean, intuitive source code](http://backbonejs.org/docs/backbone.html) is better than documentation
+* But [documentation](http://readthedocs.org/) is still essential
+* [Two](http://www.sqlalchemy.org/) [modules](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one module](https://www.djangoproject.com/) chasing two rabbits
 * [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
 * [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
