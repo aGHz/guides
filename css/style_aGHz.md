@@ -21,7 +21,19 @@ CSS Style Guide
       /* background-related properties such as color, image or gradients */
       background-color: ;
       background: ;
-    
+      -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+         -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+              
+      background: #48ace4; /* Old browsers */
+      background:        -webkit-gradient(linear, left top, left bottom, color-stop(0%, #48ace4), color-stop(100%, #368dbe)); /* Chrome, Safari4+ */
+      background:    -moz-linear-gradient(top, #48ace4 0%, #368dbe 100%); /* FF3.6+ */
+      background: -webkit-linear-gradient(top, #48ace4 0%, #368dbe 100%); /* Chrome10+, Safari5.1+ */
+      background:      -o-linear-gradient(top, #48ace4 0%, #368dbe 100%); /* Opera 11.10+ */
+      background:     -ms-linear-gradient(top, #48ace4 0%, #368dbe 100%); /* IE10+ */
+      background:         linear-gradient(to bottom, #48ace4 0%, #368dbe 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48ace4', endColorstr='#368dbe', GradientType=0); /* IE6-9 */
+  
       /* font-related properties */
       font-family: ;
       font-style: ;
@@ -62,8 +74,15 @@ Names
 
 Properties
 ----------
-* 
-
+* Properties **should** be specified almost exclusively on a single line.
+* Properties **may** occasionally be collapsed to a single line when only a small number describe a relatively
+  insignificant selector. In such a case, the closing bracket **must** also be on the same line.
+* Properties **must** appear in a consistent order: placement and dimensions, background, font and content, followed
+  by miscelaneous properties.
+* Placement and dimension properties **must** be ordered starting from outermost to innermost:
+  display, floating and vertical align, position, coordinates and size, margin, border, padding.
+* Vendor-specific properties **must** align at the colon, and vendor-specific functions **must**
+  align at the opening parenthesis.
 
 Brackets
 --------
