@@ -1,7 +1,7 @@
 guides
 ======
 
-Guides and style guides
+Technical guides, style guides and tips and tricks.
 
 CSS
 ---
