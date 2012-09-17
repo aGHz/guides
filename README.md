@@ -22,5 +22,5 @@ HTML
     
 Python
 ------
-* [Micro.py](https://github.com/aGHz/guides/blob/master/python/micropy.md)
+* [&#181;.py](https://github.com/aGHz/guides/blob/master/python/micropy.md)
 
