@@ -10,7 +10,7 @@ extremely specialized and efficient modules.
 
 Components
 ==========
-All components are merely recommended.
+A package appearing in this list does not imply a recommendation, some are merely listed for further investigation or as examples of what the component should accomplish.
 
 Outside the app
 ---------------
@@ -39,7 +39,7 @@ Optional functionality
 * cache and session management: [Beaker](http://beaker.readthedocs.org/en/latest/index.html)
 * HTML form validation: [FormEncode](http://www.formencode.org/en/latest/index.html), [WTForms](http://wtforms.simplecodes.com/docs/),
   [StackOverflow thread](http://stackoverflow.com/questions/3192747/recommendation-for-python-form-validation-library)
-* authentication and authorization
+* authentication and authorization: [LibAuthKit](http://pypi.python.org/pypi/LibAuthKit), [repoze.who](http://docs.repoze.org/who/2.0/)+[.what](http://what.repoze.org/docs/1.0/)
 * automatic admin interface generation: inspired by [Appengine Admin](http://code.google.com/p/appengine-admin/)
   and [django.contrib.admin](https://docs.djangoproject.com/en/1.4/ref/contrib/admin/)
 * admin shell: [IPython](http://ipython.org/documentation.html)
