@@ -5,7 +5,7 @@
 based on nascent philosophies in the Javascript world (c.f. [microjs](http://microjs.com/) and [Ender](http://ender.no.de/)),
 as well as the guiding principle behind Linux development (_Small applications that do one thing and do it well_).
 The driving idea is to eschew full-stack frameworks in favour of a hand-picked collection of
-extremely specialized and efficient modules.
+extremely specialized and efficient packages.
 
 
 Components
