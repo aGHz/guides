@@ -21,20 +21,29 @@ Outside the app
 * [Git](http://git-scm.com/book), [git-flow](https://github.com/nvie/gitflow) and [GitHub](http://github.com)
 * codebase directory structure inspired by the [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
   for self-contained, easily-deployable app environments
+* testing: [nose](http://wiki.python.org/moin/PythonTestingToolsTaxonomy) and [nose plugins](https://nose-plugins.jottit.com/), [Python Testing Tools Taxonomy](http://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 
 Inside the app
 --------------
 Core functionality
-* a WSGI middleware stack manager (for an easily configurable stack with automatic dependency ordering)
+* a WSGI middleware stack manager (for an easily configurable stack of middleware with automatic dependency ordering).
+  If &#181;.py develops into something more concrete than a philosophy, this will likely be the most essential functionality,
+  acquiring micro packages and organizing them properly both in the codebase and at runtime.
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/)
+* a WSGI request and response convenience wrapper: [WebOb](http://docs.webob.org/en/latest/reference.html)
+* request-local module globals: [paste.registry](http://pythonpaste.org/modules/registry.html) is discontinued
 * database access: [SQLAlchemy](http://www.sqlalchemy.org/), [MongoEngine](http://mongoengine.org/), [PyMongo](http://api.mongodb.org/python/current/)
 * template rendering: [Jinja2](http://jinja.pocoo.org/docs/), [Mako](http://docs.makotemplates.org/en/latest/index.html)
 
 Optional functionality
 * cache and session management: [Beaker](http://beaker.readthedocs.org/en/latest/index.html)
-* HTML form validation
+* HTML form validation: [FormEncode](http://www.formencode.org/en/latest/index.html), [WTForms](http://wtforms.simplecodes.com/docs/),
+  [StackOverflow thread](http://stackoverflow.com/questions/3192747/recommendation-for-python-form-validation-library)
 * authentication and authorization
-* automatic admins
+* automatic admin interface generation: inspired by [Appengine Admin](http://code.google.com/p/appengine-admin/)
+  and [django.contrib.admin](https://docs.djangoproject.com/en/1.4/ref/contrib/admin/)
+* admin shell: [IPython](http://ipython.org/documentation.html)
+* CLI tool creation: [Marrow Scripting](https://github.com/marrow/marrow.script), [cli](http://packages.python.org/pyCLI/), [argparse](http://docs.python.org/library/argparse.html)
 
 A good list of possibly acceptable modules can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
 
