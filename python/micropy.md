@@ -48,8 +48,10 @@ Optional functionality
 Additional interesting packages
 * [rauth](https://github.com/litl/rauth), a Python library for OAuth 1.0/a, 2.0, and Ofly.
 * [requests](https://github.com/kennethreitz/requests), Python HTTP Requests for Humans.
+* [GeoAlchemy](http://www.geoalchemy.org/), GIS Support for SQLAlchemy.
 
 A good list of possibly acceptable packages can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
+Many [Werkzeug](http://werkzeug.pocoo.org/docs/) and [Marrow](https://github.com/marrow/) modules might be good candidates if they can behave fairly independently.
 
 
 Zen of &#181;
