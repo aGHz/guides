@@ -31,7 +31,7 @@ Core functionality
   acquiring micro packages and organizing them properly both in the codebase and at runtime.
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/)
 * a WSGI request and response convenience wrapper: [WebOb](http://docs.webob.org/en/latest/reference.html)
-* request-local module globals: [paste.registry](http://pythonpaste.org/modules/registry.html) is discontinued
+* request-local module globals: [paste.registry](http://pythonpaste.org/modules/registry.html) is discontinued, [Flask request context](http://flask.pocoo.org/docs/reqcontext/)
 * database access: [SQLAlchemy](http://www.sqlalchemy.org/), [MongoEngine](http://mongoengine.org/), [PyMongo](http://api.mongodb.org/python/current/)
 * template rendering: [Jinja2](http://jinja.pocoo.org/docs/), [Mako](http://docs.makotemplates.org/en/latest/index.html)
 
