@@ -45,7 +45,11 @@ Optional functionality
 * admin shell: [IPython](http://ipython.org/documentation.html)
 * CLI tool creation: [Marrow Scripting](https://github.com/marrow/marrow.script), [cli](http://packages.python.org/pyCLI/), [argparse](http://docs.python.org/library/argparse.html)
 
-A good list of possibly acceptable modules can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
+Additional interesting packages
+* [rauth](https://github.com/litl/rauth), a Python library for OAuth 1.0/a, 2.0, and Ofly.
+* [requests](https://github.com/kennethreitz/requests), Python HTTP Requests for Humans.
+
+A good list of possibly acceptable packages can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
 
 
 Zen of &#181;
@@ -54,7 +58,7 @@ Zen of &#181;
 * [Clean, intuitive source code](http://backbonejs.org/docs/backbone.html) is better than documentation
 * But [documentation](http://readthedocs.org/) is still essential
 * Size matters, but not at the expense of clean, intuitive source code
-* [Two](http://www.sqlalchemy.org/) [modules](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one module](https://www.djangoproject.com/) chasing two rabbits
+* [Two](http://www.sqlalchemy.org/) [packages](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one package](https://www.djangoproject.com/) chasing two rabbits
 * [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
 * [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
 
@@ -62,7 +66,7 @@ Zen of &#181;
 Component acceptability guidelines
 ==================================
 
-For a module to be deemed micro
+For a package to be deemed micro
 * it **must** have a very clearly defined scope of functionality and **must not** overstep it
 * it **must** have an atomic scope of functionality, at some reasonable level of detail
 * it **should** have proper documentation
