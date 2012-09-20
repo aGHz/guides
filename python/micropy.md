@@ -62,10 +62,10 @@ Good candidate micro packages could also be found in the
 Zen of &#181;
 ========
 * Modular is better than monolythic
+* [Two](http://www.sqlalchemy.org/) [packages](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one package](https://www.djangoproject.com/) chasing two rabbits
 * [Clean, intuitive source code](http://backbonejs.org/docs/backbone.html) is better than documentation
 * But [documentation](http://readthedocs.org/) is still essential
 * Size matters, but not at the expense of clean, intuitive source code
-* [Two](http://www.sqlalchemy.org/) [packages](http://jinja.pocoo.org/docs/) chasing one rabbit each do better than [one package](https://www.djangoproject.com/) chasing two rabbits
 * [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
 * [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
 
