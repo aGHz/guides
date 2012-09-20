@@ -53,7 +53,10 @@ Additional interesting packages
 * [GeoAlchemy](http://www.geoalchemy.org/), GIS Support for SQLAlchemy.
 
 A good list of possibly acceptable packages can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
-Many [Werkzeug](http://werkzeug.pocoo.org/docs/) and [Marrow](https://github.com/marrow/) modules might be good candidates if they can behave fairly independently.
+Good candidate micro packages could also be found in the 
+[Werkzeug](http://werkzeug.pocoo.org/docs/),
+[Marrow](https://github.com/marrow/) and
+[repoze](http://docs.repoze.org/) projects.
 
 
 Zen of &#181;
