@@ -29,7 +29,8 @@ Core functionality
 * a WSGI middleware stack manager (for an easily configurable stack of middleware with automatic dependency ordering).
   If &#181;.py develops into something more concrete than a philosophy, this will likely be the most essential functionality,
   acquiring micro packages and organizing them properly both in the codebase and at runtime.
-* a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/)
+* a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/),
+  [Crank](https://bitbucket.org/percious/crank/) the generalized object dispatch used in [Turbo Gears 2](https://groups.google.com/forum/?fromgroups=#!topic/turbogears-trunk/uuGO3FQoy6g).
 * a WSGI request and response convenience wrapper: [WebOb](http://docs.webob.org/en/latest/reference.html)
 * request-local module globals: [paste.registry](http://pythonpaste.org/modules/registry.html) is discontinued, [Flask request context](http://flask.pocoo.org/docs/reqcontext/)
 * database access: [SQLAlchemy](http://www.sqlalchemy.org/), [MongoEngine](http://mongoengine.org/), [PyMongo](http://api.mongodb.org/python/current/)
