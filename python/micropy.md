@@ -41,8 +41,9 @@ Optional functionality
 * HTML form validation: [FormEncode](http://www.formencode.org/en/latest/index.html), [WTForms](http://wtforms.simplecodes.com/docs/),
   [StackOverflow thread](http://stackoverflow.com/questions/3192747/recommendation-for-python-form-validation-library)
 * authentication and authorization: [LibAuthKit](http://pypi.python.org/pypi/LibAuthKit), [repoze.who](http://docs.repoze.org/who/2.0/)+[.what](http://what.repoze.org/docs/1.0/)
-* automatic admin interface generation: inspired by [Appengine Admin](http://code.google.com/p/appengine-admin/)
-  and [django.contrib.admin](https://docs.djangoproject.com/en/1.4/ref/contrib/admin/)
+* automatic admin interface generation: [Sprox](http://sprox.org/),
+  [Appengine Admin](http://code.google.com/p/appengine-admin/),
+  [django.contrib.admin](https://docs.djangoproject.com/en/1.4/ref/contrib/admin/)
 * admin shell: [IPython](http://ipython.org/documentation.html)
 * CLI tool creation: [Marrow Scripting](https://github.com/marrow/marrow.script), [cli](http://packages.python.org/pyCLI/), [argparse](http://docs.python.org/library/argparse.html)
 
