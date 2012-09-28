@@ -29,6 +29,7 @@ Core functionality
 * a WSGI middleware stack manager (for an easily configurable stack of middleware with automatic dependency ordering).
   If &#181;.py develops into something more concrete than a philosophy, this will likely be the most essential functionality,
   acquiring micro packages and organizing them properly both in the codebase and at runtime.
+  Inspired by [Django middleware](https://docs.djangoproject.com/en/dev/topics/http/middleware/).
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/),
   [Crank](https://bitbucket.org/percious/crank/) the generalized object dispatch used in [Turbo Gears 2](https://groups.google.com/forum/?fromgroups=#!topic/turbogears-trunk/uuGO3FQoy6g).
 * a WSGI request and response convenience wrapper: [WebOb](http://docs.webob.org/en/latest/reference.html)
