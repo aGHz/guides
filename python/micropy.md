@@ -87,3 +87,29 @@ For a package to be deemed micro
 * it **should** have a relatively small and very clean codebase, so as to be easily understandable
 * it **must not** monkey patch another module, ever
 
+Micropy.com future wishlist
+===========================
+
+Index of micro packages and tools
+* category of package (based on role it takes on in an app)
+* equivalent packages
+* related packages (e.g. different backends, adaptors)
+* related URLs (homepage, pypi, docs, github/bitbucket, google group, mailing list, external articles)
+* related micropy.com articles
+
+Articles
+* guides and HOWTOs related to packages in the index
+* DIY micro-frameworks: guides to combining micro packages
+* package comparisons: comparing equivalent packages in terms of usability, performance, docs, etc.
+
+Social Q&A à la Reddit/HN
+
+Benchmarking
+* standardized real-world apps (e.g.
+  HN clone,
+  to-do app with user accounts,
+  web-based chat app with user accounts and rooms)
+* app code must be on github/bitbucket
+* standardized API for micro.py to talk to the deployed app and clients and collect the info
+* e.g. test runs for 1h with 5 client machines generating requests,
+  at the end micropy.com connects to them all, retrieves the information, compiles and displays it
