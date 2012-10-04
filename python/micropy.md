@@ -4,8 +4,13 @@
 &#181;.py (Micro.py, upy) is an alternative approach to building [web applications in Python](http://www.python.org/dev/peps/pep-3333/)
 based on nascent philosophies in the Javascript world (c.f. [microjs](http://microjs.com/) and [Ender](http://ender.no.de/)),
 as well as the guiding principle behind Linux development (_Small applications that do one thing and do it well_).
-The driving idea is to eschew full-stack frameworks in favour of a hand-picked collection of
-extremely specialized and efficient packages.
+The driving idea is to eschew full-stack frameworks in favour hand-picked, extremely specialized and efficient packages.
+It has a lot in common with the [TurboGears](http://turbogears.org/) philosophy of selecting best-of-breed packages,
+but differs radically in the approach to bringing these packages together. Where TurboGears provides a technical
+solution in the form of a full-stack framework integrating them, micro.py aims for a social approach.
+The goal is to provide a curated list of micro packages, extensive guides on using them and combining them
+with each other, as well as comparison studies between equivalent packages. The responsibility for decisions and
+implementation details are then left to the developer.
 
 
 Components
@@ -31,7 +36,7 @@ Core functionality
   acquiring micro packages and organizing them properly both in the codebase and at runtime.
   Inspired by [Django middleware](https://docs.djangoproject.com/en/dev/topics/http/middleware/).
 * a dispatcher to map URLs to Python code: [Colubrid](http://wsgiarea.pocoo.org/colubrid/documentation/),
-  [Crank](https://bitbucket.org/percious/crank/) the generalized object dispatch used in [Turbo Gears 2](https://groups.google.com/forum/?fromgroups=#!topic/turbogears-trunk/uuGO3FQoy6g).
+  [Crank](https://bitbucket.org/percious/crank/) the generalized object dispatch used in [TurboGears 2](https://groups.google.com/forum/?fromgroups=#!topic/turbogears-trunk/uuGO3FQoy6g).
 * a WSGI request and response convenience wrapper: [WebOb](http://docs.webob.org/en/latest/reference.html)
 * request-local module globals: [paste.registry](http://pythonpaste.org/modules/registry.html) is discontinued, [Flask request context](http://flask.pocoo.org/docs/reqcontext/)
 * database access: [SQLAlchemy](http://www.sqlalchemy.org/), [MongoEngine](http://mongoengine.org/), [PyMongo](http://api.mongodb.org/python/current/)
