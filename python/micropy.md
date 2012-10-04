@@ -47,6 +47,7 @@ Optional functionality
 * HTML form validation: [FormEncode](http://www.formencode.org/en/latest/index.html), [WTForms](http://wtforms.simplecodes.com/docs/),
   [StackOverflow thread](http://stackoverflow.com/questions/3192747/recommendation-for-python-form-validation-library)
 * authentication and authorization: [LibAuthKit](http://pypi.python.org/pypi/LibAuthKit), [repoze.who](http://docs.repoze.org/who/2.0/)+[.what](http://what.repoze.org/docs/1.0/)
+* observer pattern (aka. signal/slot): [Louie](https://github.com/11craft/louie/), [PyDispatcher](http://pydispatcher.sourceforge.net/), [Wikipedia list](http://en.wikipedia.org/wiki/Observer_pattern#Python) of other observer packages
 * automatic admin interface generation: [Sprox](http://sprox.org/),
   [Appengine Admin](http://code.google.com/p/appengine-admin/),
   [django.contrib.admin](https://docs.djangoproject.com/en/1.4/ref/contrib/admin/)
