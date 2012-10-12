@@ -19,8 +19,15 @@ HTML
     * [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
     * [W3C HTML Syntax](http://www.w3.org/TR/html-markup/syntax.html)
 
-    
+
 Python
 ------
 * [&#181;.py](https://github.com/aGHz/guides/blob/master/python/micropy.md)
+
+
+Codebase
+--------
+Guides on structuring codebases in general
+* [Deployable Web Application Directory Hierarchy](https://github.com/aGHz/guides/blob/master/codebase/dwadh.md),
+  a directory structure recommendation based on the Filesystem Hierarchy Standard
 
