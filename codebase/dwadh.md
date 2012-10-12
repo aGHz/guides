@@ -10,17 +10,17 @@ Features
 * Easy VCS-based deployment, particularly when combined with something like
   [git-flow](https://github.com/nvie/gitflow). No packaging is required, distributing
   the code for a deployment is just a matter of cloning the master branch of your repository.
-* Self-contained deployments. All files related to your application are contained
-  within the deployment directory, so regardless of where your system likes to keep
-  log files, you always know where to find yours.
+* Self-contained deployments. All files related to the application are contained
+  within the deployment directory, so regardless of where the system likes to keep
+  log files, it'll always be easy to find the app's.
 * All files are arranged into sensible directories inspired by the
   [Filesystem Hierarchy Standard](https://wiki.linuxfoundation.org/en/FHS). If you've ever
-  used Linux before, you'll know where to find your log files.
+  used Linux before, you'll know where to find the logs.
 * VCS-controlled dependencies. DWADH prescribes a directory dedicated to 3rd party
   source code. Although not necessary, these libraries can be managed via
   [git submodules](http://git-scm.com/book/en/Git-Tools-Submodules)
-  (or [Mercurial subrepos](http://mercurial.selenic.com/wiki/Subrepository?action=show&redirect=Subrepositories),
-  although these are considered problematic), making it possible to push
+  (or [Mercurial subrepos](http://mercurial.selenic.com/wiki/Subrepository?action=show&redirect=Subrepositories)
+  but these are considered problematic), making it possible to push
   back upstream any changes made in the course of developing your own code.
 
 Typical setup
