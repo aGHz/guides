@@ -23,10 +23,12 @@ Outside the app
 * [uWSGI](http://projects.unbit.it/uwsgi/wiki/Doc)
 * [supervisord](http://supervisord.org/), [circus](http://circus.readthedocs.org/en/latest/)
 * [Fabric](http://docs.fabfile.org/)
-* [Git](http://git-scm.com/book), [git-flow](https://github.com/nvie/gitflow) and [GitHub](http://github.com)
+* [Git](http://git-scm.com/book), [git-flow](https://github.com/nvie/gitflow)
+  and [GitHub](http://github.com)/[GitLab](http://gitlabhq.com/)
 * codebase directory structure inspired by the [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
   for self-contained, easily-deployable app environments
 * testing: [nose](http://wiki.python.org/moin/PythonTestingToolsTaxonomy) and [nose plugins](https://nose-plugins.jottit.com/), [Python Testing Tools Taxonomy](http://wiki.python.org/moin/PythonTestingToolsTaxonomy)
+* [sentry](https://github.com/getsentry/sentry) for monitoring exceptions
 
 Inside the app
 --------------
