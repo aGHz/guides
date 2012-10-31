@@ -21,7 +21,7 @@ Outside the app
 ---------------
 * [Nginx](http://wiki.nginx.org/Main)
 * [uWSGI](http://projects.unbit.it/uwsgi/wiki/Doc)
-* [supervisord](http://supervisord.org/)
+* [supervisord](http://supervisord.org/), [circus](http://circus.readthedocs.org/en/latest/)
 * [Fabric](http://docs.fabfile.org/)
 * [Git](http://git-scm.com/book), [git-flow](https://github.com/nvie/gitflow) and [GitHub](http://github.com)
 * codebase directory structure inspired by the [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
