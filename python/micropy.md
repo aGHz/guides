@@ -55,6 +55,7 @@ Optional functionality
 * CLI tool creation: [Marrow Scripting](https://github.com/marrow/marrow.script), [cli](http://packages.python.org/pyCLI/), [argparse](http://docs.python.org/library/argparse.html)
 
 Additional interesting packages
+* [mimeparse](http://code.google.com/p/mimeparse/) for parsing Content-Type and Accept headers
 * [rauth](https://github.com/litl/rauth), a Python library for OAuth 1.0/a, 2.0, and Ofly.
 * [requests](https://github.com/kennethreitz/requests), Python HTTP Requests for Humans.
 * [GeoAlchemy](http://www.geoalchemy.org/), GIS Support for SQLAlchemy.
