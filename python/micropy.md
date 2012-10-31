@@ -20,15 +20,16 @@ A package appearing in this list does not imply a recommendation, some are merel
 Outside the app
 ---------------
 * [Nginx](http://wiki.nginx.org/Main)
-* [uWSGI](http://projects.unbit.it/uwsgi/wiki/Doc)
-* [supervisord](http://supervisord.org/), [circus](http://circus.readthedocs.org/en/latest/)
+* [uWSGI](http://projects.unbit.it/uwsgi/wiki/Doc) + [supervisord](http://supervisord.org/); [circus](http://circus.readthedocs.org/en/latest/)
 * [Fabric](http://docs.fabfile.org/)
 * [Git](http://git-scm.com/book), [git-flow](https://github.com/nvie/gitflow)
-  and [GitHub](http://github.com)/[GitLab](http://gitlabhq.com/)
-* codebase directory structure inspired by the [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-  for self-contained, easily-deployable app environments
+  and [GitHub](http://github.com) / [GitLab](http://gitlabhq.com/)
 * testing: [nose](http://wiki.python.org/moin/PythonTestingToolsTaxonomy) and [nose plugins](https://nose-plugins.jottit.com/), [Python Testing Tools Taxonomy](http://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 * [sentry](https://github.com/getsentry/sentry) for monitoring exceptions
+* [Deployable Web Application Directory Hierarchy](https://github.com/aGHz/guides/blob/master/codebase/dwadh.md),
+  codebase directory structure inspired by the
+  [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+  for self-contained, easily-deployable app environments
 
 Inside the app
 --------------
@@ -76,8 +77,8 @@ Zen of &#181;
 * [Clean, intuitive source code](http://backbonejs.org/docs/backbone.html) is better than documentation
 * But [documentation](http://readthedocs.org/) is still essential
 * Size matters, but not at the expense of clean, intuitive source code
-* [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good (_If it walks like a duck and it quacks like a duck, it probably is a duck_),
-* [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad (_If it doesn't, punch it until it does_)
+* [Duck typing](http://en.wikipedia.org/wiki/Duck_typing) is good - _If it walks like a duck and it quacks like a duck, it probably is a duck_ ,
+* [Duck punching](http://www.ericdelabar.com/2008/05/metaprogramming-javascript.html) is bad - _If it doesn't, punch it until it does_
 
 
 Component acceptability guidelines
