@@ -31,3 +31,30 @@ Install Nginx from their [Launchpad PPA](http://wiki.nginx.org/Install#Ubuntu_PP
 * `apt-get update`
 * `apt-get install nginx`
 
+
+HSH server setup
+================
+
+Setting up a Ubuntu server from scratch:
+
+- Start with a `apt-get update` and `apt-get dist-upgrade`
+- [Install](http://wiki.nginx.org/Install#Ubuntu_PPA) Nginx from their Launchpad PPA (Personal Package Archive)
+- [Install](http://www.percona.com/doc/percona-server/5.5/installation.html#using-percona-software-repositories?id=repositories:start)
+Percona Server 5.5 from the [Percona apt repository](http://www.percona.com/doc/percona-server/5.5/installation/apt_repo.html) then configure users:
+    - `CREATE USER ‘hshapi’@’localhost’ IDENTIFIED BY ‘hshapi’;`
+    - `CREATE DATABASE hshapi;`
+    - `GRANT ALL ON hshapi.* to ‘hshapi’@’localhost’;`
+- Install git:
+    - `apt-get install git`
+    - Install [git-flow](https://github.com/nvie/gitflow)
+        + `git clone --recursive git://github.com/nvie/gitflow.git`
+        + `cd gitflow && sudo make install`
+- Install Python 2.7
+    - `apt-get install python2.7 python2.7-dev`
+    - make <em>/usr/bin/python</em> point to 2.7 and update <em>/usr/share/python/debian\_defaults</em>
+- [Install](http://www.pip-installer.org/en/latest/installing.html) pip (not from apt)
+    - with a `pip install --upgrade pip virtualenv` for good measure
+- Install libjpeg and libpng
+    - Linux: `apt-get install libjpeg-dev libpng-dev`
+    - OS X: use [these binaries](http://ethan.tira-thompson.com/Mac_OS_X_Ports.html)
+
