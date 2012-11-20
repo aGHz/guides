@@ -59,10 +59,11 @@ Optional functionality
 
 Additional interesting packages
 * [mimeparse](http://code.google.com/p/mimeparse/) for parsing Content-Type and Accept headers
-* [rauth](https://github.com/litl/rauth), a Python library for OAuth 1.0/a, 2.0, and Ofly.
-* [requests](https://github.com/kennethreitz/requests), Python HTTP Requests for Humans.
-* [GeoAlchemy](http://www.geoalchemy.org/), GIS Support for SQLAlchemy.
+* [rauth](https://github.com/litl/rauth), a Python library for OAuth 1.0/a, 2.0, and Ofly
+* [requests](https://github.com/kennethreitz/requests), Python HTTP Requests for Humans
+* [GeoAlchemy](http://www.geoalchemy.org/), GIS Support for SQLAlchemy
 * [lazypy](http://pypi.python.org/pypi/lazypy/), lazily evaluated functions
+* [Celery](http://docs.celeryproject.org/en/master/index.html), task queue and scheduling
 
 A good list of possibly acceptable packages can by found on the [Python wiki](http://wiki.python.org/moin/WebComponents).
 Good candidate micro packages could also be found in the 
