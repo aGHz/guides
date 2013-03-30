@@ -1,8 +1,8 @@
-= Arsenal Engine
+# Arsenal Engine
 
 An engine for modelling card games (Magic, Dominion, etc).
 
-== Document language
+## Document language
 
     <player id="player_1" class="self">
         <zone class="deck">
@@ -29,14 +29,14 @@ An engine for modelling card games (Magic, Dominion, etc).
         <ability ...>
     </zone>
 
-== Node selection language
+## Node selection language
 
-== Document modification language
+## Document modification language
 
 
-== Examples
+## Examples
 
-=== SBAs
+### SBAs
 
 Move creatures with <= 0 toughness to their controllers' graveyards
 
@@ -46,7 +46,9 @@ Move creatures with <= 0 toughness to their controllers' graveyards
 Planeswalker uniqueness rule
 
     $('.field [type~="planeswalker"]').each( $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)').move($(':this::owner .grave')) )
-    Explained:
+
+Explained:
+
     $('.field [type~="planeswalker"]').each(                                                // for each planeswalker on the field
         $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)')          // select all planeswalkers on the field that share a subtype with it, as long as there are 2 or more of them
             .move($(':this::owner .grave'))                                                 // ... and move them to their owners' graveyards
