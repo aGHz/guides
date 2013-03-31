@@ -53,6 +53,20 @@ An engine for modelling card games (Magic, Dominion, etc).
     predicate_test ::= "[" predicate_expression "]"
         e.g. [@tough>=0]
 
+`attribute_test` can check for the existence of an attribute if no value is given.
+If a value is given, it performs the equivalent of `[@attr=value]` if value is a number,
+or `[@attr~~value]` if value is a string (thereby treating it as a list).
+
+### Predicate expression
+
+Operators:
+
+    =   attribute value equals <value>, also <, <=, >, >=, !=
+    ~=  attribute value as a list contains an element with value <value>, or wholly contains <value> as a list
+    ~~  attribute value as a list contains at least some element contained by <value> as a list
+    =~  attribute value as a list is wholly contained among the elements of <value> as a list
+    (mnemonic: the operand on the ~ side of the operator should be the larger one)
+    (maybe replace this with `>` and `<`?)
 
 
 ## Document modification language
@@ -68,16 +82,16 @@ An engine for modelling card games (Magic, Dominion, etc).
 
 #### Move creatures with <= 0 toughness to their controllers' graveyards
 
-    $('zone.field card[type~="creature"][tough<=0]').move($('player:owns(:this) zone.grave'))
+    $('zone.field card@type("creature")[tough<=0]').move($('player:owns(:this) zone.grave'))
     $('.field [type~="creature"][tough<=0]').move($(':this::owner .grave'))
 
 #### Planeswalker uniqueness rule
 
-    $('.field [type~="planeswalker"]').each( $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)').move($(':this::owner .grave')) )
+    $('.field @type("planeswalker")').each( $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)').move($(':this::owner .grave')) )
 
 Explained:
 
-    $('.field [type~="planeswalker"]').each(                                                // for each planeswalker on the field
+    $('.field @type("planeswalker")').each(                                                // for each planeswalker on the field
         $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)')          // select all planeswalkers on the field that share a subtype with it, as long as there are 2 or more of them
             .move($(':this::owner .grave'))                                                 // ... and move them to their owners' graveyards
     )
