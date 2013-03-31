@@ -6,13 +6,24 @@ An engine for modelling card games (Magic, Dominion, etc).
 
     <player id="player_1" class="self">
         <zone class="deck">
-            <card class="creature goblin red" name="Goblins" power=2 tough=2 mana="2RR" uri="mtg://gc/2">The actual text on the card goes here</card>
+            <card class="creature" sub_type="goblin" color="red" name="Goblins" power=2 tough=2 cmc=4 uri="mtg://gc/2">
+                <resource type="mana" color="red" value="2" />
+                <resource type="mana" color="multicolor" value="2" />
+                <ability>...</ability>
+                The actual text on the card goes here
+            </card>
             ...
         </zone>
         <zone class="library">
         </zone>
         <zone class="hand">
-            <card class="legendary_creature dragon red white multicolor" name="Dragon" power=6 tough=6 mana="4RW" uri="mtg://gc/4">...</card>
+            <card class="creature" super_type="legendary" sub_type="dragon" color="red white multicolor" name="Dragon" power=6 tough=6 cmc=6 uri="mtg://gc/4">
+                <resource type="mana" color="red" value="1" />
+                <resource type="mana" color="white" value="1" />
+                <resource type="mana" color="multicolor" value="4" />
+                <ability>...</ability>
+                ...
+            </card>
             ...
         </zone>
         <zone class="field">
@@ -31,19 +42,36 @@ An engine for modelling card games (Magic, Dominion, etc).
 
 ## Node selection language
 
+    selector ::= selector_expr | selector_expr, selector
+    selector_expr ::= test | test, op, selector_expr
+    test ::= test_atom | test_atom, test
+    test_atom ::= ( type_test | attribute_test | predicate_test )+
+    type_test ::= <node type>
+        e.g. player, zone, card
+    attribute_test ::= "@" <attribute_name> [ "(" <value> ")" ]
+        e.g. card@type("creature")
+    predicate_test ::= "[" predicate_expression "]"
+        e.g. [@tough>=0]
+
+
+
 ## Document modification language
+
+
+## Run-time engine
 
 
 ## Examples
 
+
 ### SBAs
 
-Move creatures with <= 0 toughness to their controllers' graveyards
+#### Move creatures with <= 0 toughness to their controllers' graveyards
 
     $('zone.field card[type~="creature"][tough<=0]').move($('player:owns(:this) zone.grave'))
     $('.field [type~="creature"][tough<=0]').move($(':this::owner .grave'))
 
-Planeswalker uniqueness rule
+#### Planeswalker uniqueness rule
 
     $('.field [type~="planeswalker"]').each( $('.field [type~="planeswalker"][subtype~~(:this[subtype])]:n-match(n+2)').move($(':this::owner .grave')) )
 
